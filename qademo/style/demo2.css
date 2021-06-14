@@ -1,0 +1,96 @@
+
+
+.wrapper {
+  height: 100vh;
+  background: linear-gradient(120deg, rgba(19, 178, 102, 0.72), rgba(38, 184, 208, 0.72), rgba(50, 107, 185, 0.72), rgba(193, 71, 183, 0.72), rgba(206, 61, 104, 0.72)) fixed;
+  background-size: 500%;
+  -webkit-animation: bg-gradient 15s ease infinite;
+  -moz-animation: bg-gradient 15s ease infinite;
+  -o-animation: bg-gradient 15s ease infinite;
+  animation: bg-gradient 15s ease infinite;
+}
+@-webkit-keyframes bg-gradient {
+  0% {
+    background-position: 14% 0;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0;
+  }
+}
+@-moz-keyframes bg-gradient {
+  0% {
+    background-position: 14% 0;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0;
+  }
+}
+@-o-keyframes bg-gradient {
+  0% {
+    background-position: 14% 0;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0;
+  }
+}
+@keyframes bg-gradient {
+  0% {
+    background-position: 14% 0;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0;
+  }
+}
+.content {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+.content h1 {
+  font-size: 50px;
+}
+.content .caption {
+  font-size: 15px;
+}
+
+/*button*/
+.container {
+padding-top: 100px;
+}
+.btn-shine {
+  color: #FFF;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 45px;
+  width: 200px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 4px solid transparent;
+  outline: 2px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.btn-shine:hover {
+  border-color: #FFF;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: transparent;
+  outline-offset: 12px;
+  text-shadow: 2px 2px 3px #000;
+}
