@@ -1,0 +1,814 @@
+<head>
+	<title>$!APPNAME | $!title</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<meta name="description" content="$!description">
+		<meta name="keywords" content="$!KEYWORDS">
+		<meta name="generator" content="Scoold">
+		<meta property="fb:app_id" content="$!FB_APP_ID">
+		<meta property="og:title" content="$!APPNAME | $!title">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="$!request.getRequestURL()">
+		<meta property="og:image" content="$!ogimage">
+		<meta property="og:description" content="$!description">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@getscoold">
+		<meta name="twitter:title" content="$!APPNAME | $!title">
+		<meta name="twitter:description" content="$!description">
+		<meta name="twitter:image" content="$!ogimage">
+		<link href="$!request.contextPath/opensearch.xml" title="$!APPNAME" type="application/opensearchdescription+xml" rel="search">
+		<link href="$!request.contextPath/feed.xml" rel="alternate" type="application/atom+xml" title="New questions feed">
+		<link href="$!imageslink/logowhite.png" rel="image_src">
+		<link href="$!imageslink/logowhite.png" rel="apple-touch-icon">
+		<link href="$!faviconUrl" rel="shortcut icon">
+		<link href="style/materialize.min.css" rel="stylesheet">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+		<link href="style/easymde.min.css" rel="stylesheet">
+		<link href="style/style.css" rel="stylesheet">
+	
+	</head>
+
+
+	<body>
+		<div class="scoold-wrapper">
+			<header>
+				<div class="none">
+					<nav class="navbar-color">
+						<div class="nav-wrapper container wid90">
+							<a href="#" data-target="mobile-drawer" class="sidenav-trigger"><i class="fa fa-bars fa-2x" style="color:#e0e0e0"></i></a>
+							
+									<ul id="spaces-dropdown" class="dropdown-content">
+											<li><a href="/questions/space?returnto=/question/5f3c89161114c1016fa405c2/%E6%A0%BC%E5%AE%89%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E5%BA%97%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84" class="navbtn-hover white-text">
+											すべてのスペース</a></li>
+											<li class="divider"></li>
+											<li><a href="/questions/space/scooldspace:スペース2?returnto=/question/5f3c89161114c1016fa405c2/%E6%A0%BC%E5%AE%89%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E5%BA%97%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84" title="スペース2"
+														 class="">スペース2</a></li>
+											<li class="divider"></li>
+									</ul>
+								<ul id="user-dropdown" class="dropdown-content">
+									<li><a href="profile.html" title="User1">プロフィール</a></li>
+									<li><a href="/settings" title="Settings">設定</a></li>
+									<li class="divider"></li>
+									<li><a href="/signout" title="Sign out" class="mtm signout">ログアウト</a></li>
+								</ul>
+
+							<div class="brand-logo">
+								<a href="index.html">
+									<img src="images/image1.png" class="scoold-logo" width="200" alt="scoold logo">
+								</a>
+								<span style="color:black; font-size:small;">テストページ</span>
+							</div>
+
+							<ul class="right hide-on-med-and-down">
+								<!--　↓NEW検索スペース↓ 64行目に埋め込む　-->
+									<li>
+										<label for="kensaku">
+											<a class="dropdown-trigger">
+												<i class="fa fa-search fa"></i>
+											</a>
+										</label>
+										<input type="checkbox" id="kensaku" >
+										<div class="dropdown-content-kensaku">
+											<input id="search-box" type="search" name="q" placeholder="検索" required=""style="padding-left:2600px">
+											<i class="fa fa-search fa-2x"></i>
+											<i class="fa fa-question-circle"></i>
+											<i class="fa fa-close"></i>
+										</div>
+									</li>
+								<!--　↑NEW検索スペース↑　-->
+
+								<li><a href="index.html" title="Questions" class="">質問</a></li>
+								<li><a href="user.html" title="Users" class="">ユーザー</a></li>
+								<li><a href="tags.html" title="Tags" class="">タグ</a></li>
+								<li><a href="ask.html" title="Ask Question" class="">質問する</a></li>
+								
+								
+								<li><label for="menu">
+									<a class="dropdown-trigger">
+										カテゴリ
+										<i class="fa fa-caret-down right"></i>
+									</a></label>
+									<input type="checkbox" id="menu">								
+									<ul class="dropdown-content">
+										<li><span href="/questions/category/categoryId_5f3b95ea1114c1016fa404b2?returnto=/questions/ask" title="開発言語" class="">開発言語</span></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="/questions/category/categoryId_606aa0e6b27b3735c3af685f?returnto=/questions/ask" title="Salesforce" class="">Salesforce</span></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="/questions/category/categoryId_5f3b95dc1114c1016fa4049a?returnto=/questions/ask" title="研修生の投稿" class="">研修生の投稿</span></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="/questions/category/categoryId_5f3b95e41114c1016fa404a6?returnto=/questions/ask" title="Office系知識" class="">Office系知識</span></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="/questions/category/categoryId_5fbdc0a3738c196836234881?returnto=/questions/ask" title="GRANDITチーム" class="">GRANDITチーム</span></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="/questions/category/categoryId_5f3b95f11114c1016fa404be?returnto=/questions/ask" title="ライフハック" class="">ライフハック</span></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="/questions/category/categoryId_5f3b95f81114c1016fa404ca?returnto=/questions/ask" title="一般的な質問" class="">一般的な質問</span></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="/questions/category/categoryId_5f3b95d51114c1016fa4048e?returnto=/questions/ask" title="社内システム・ルール" class="">社内システム・ルール</span></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="/questions/category/categoryId_5f3b95cd1114c1016fa40482?returnto=/questions/ask" title="scooldの使い方・要望" class="">scooldの使い方・要望</span></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="/questions/category/categoryId_5fbdc0a2738c196836234875?returnto=/questions/ask" title="CBI" class="">CBI</span></li>
+										<li class="divider" tabindex="0"></li>
+									</ul>
+								</li>
+
+									<li>
+										<a href="report.html" title="Reports" class="">レポート
+										</a>
+									</li>
+
+								<li>
+									<label for="space">
+										<a class="">
+											<i class="fa fa-th-large"></i>
+											<i class="fa fa-caret-down right"></i>
+										</a>
+									</label>
+									<input type="checkbox" id="space">	
+									<ul class="dropdown-content-space">
+										<li><span href="#" class="">すべてのスペース</span></li>
+									</ul>
+								</li>
+
+								<li>
+									<label for="my">
+										<a class="scoold-user-dropdown">
+											<img src="images/avatar.svg" width="50" class="profile-pic responsive-img" alt="Avatar">
+											<i class="fa fa-caret-down right"></i>
+										</a>
+									</label>
+									<input type="checkbox" id="my">	
+									<ul class="dropdown-content-my">
+										<li><a href="profile.html" class="">プロフィール</a></li>
+										<li class="divider" tabindex="0"></li>
+										<li><a href="settings.html" class="">設定</a></li>
+										<li class="divider" tabindex="0"></li>
+										<li><span href="#" class="">ログアウト</span></li>
+									</ul>
+								</li>
+
+
+							</ul>
+
+
+
+							<ul class="sidenav" id="mobile-drawer">
+								<li><label for="kensaku">
+									<nav class="dropdown-trigger">
+										<div class="nav-wrapper container">
+											<form action="/search">
+												<div class="input-field">
+													<label class="label-icon" for="search"><i class="fa fa-search fa-2x"></i></label>
+													<input type="search" name="q" placeholder="検索" required>>
+														<i class="material-icons fa fa-close"></i>
+												</div>
+											</form>
+										</div>
+									</nav></label>
+								</li>
+									<li>
+										<img src="images/avatar.svg" width="50"  alt="Avatar" class="profile-pic responsive-img left mhl">
+										<a href="/profile" class="black-text mvl pll">User1</a>
+									</li>
+									<li><a href="/settings" title="Settings">設定</a></li>
+								<li><a href="ask.html" title="Ask Question" class="">質問する</a></li>
+								<li><a href="index.html" title="Questions" class="">質問</a></li>
+								<li><a href="user.html" title="Users" class="">ユーザー</a></li>
+								<li><a href="tags.html" title="Tags" class="">タグ</a></li>
+								<li><a title="Category">カテゴリ</a></li>
+										<li>
+											<a href="report.html" title="Reports" class="">レポート
+											</a>
+										</li>
+
+										<li class="divider"></li>
+											<li><a href="/questions/space?returnto=/question/5f3c89161114c1016fa405c2/%E6%A0%BC%E5%AE%89%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E5%BA%97%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84" class="navbtn-hover white-text">
+												すべてのスペース
+											</a></li>
+											<li class="divider"></li>
+											<li><a href="/questions/space/scooldspace:スペース2?returnto=/question/5f3c89161114c1016fa405c2/%E6%A0%BC%E5%AE%89%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E5%BA%97%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84" title="スペース2"
+														 class="">スペース2</a></li>
+											<li class="divider"></li>
+									<li><a href="/signout" title="Sign out" class="signout">ログアウト</a></li>
+							</ul>
+						</div>
+					</nav>
+
+					<nav id="search-drawer" class="white z-depth-1 hide hide-on-med-and-down">
+						<div class="nav-wrapper container">
+							<form id="search-drawer" class="hide-on-med-and-down" action="/search">
+								<div class="input-field">
+									<input id="search-box" type="search" name="q" placeholder="検索" required>
+									<label class="label-icon　active" for="search-box">
+										<i class="fa fa-search fa-2x grey-text"></i>
+									</label>
+									<a href="#" id="search-info-right">
+										<i class="fa fa-question-circle grey-text"></i>
+									</a>
+									<i class="material-icons fa fa-close grey-text toggle-drawer"></i>
+								</div>
+							</form>
+						</div>
+					</nav>
+
+					<div id="search-info-drawer" class="z-depth-0 hide hide-on-med-and-down">
+						<div class="pvl container">
+							<div class="row">
+								<div class="col m6 s12">
+									<div>
+										<b>Examples:</b> <code>query</code>, <code>"exact match"</code>, <code>wildcard*</code>,
+										<code>wild?ard</code>, <code>wild*rd</code>
+									</div>
+									<div>
+										<b>Fuzzy search:</b> <code>cake~</code> (finds <code>cakes</code>, <code>bake</code>)
+									</div>
+									<div>
+										<b>Term boost:</b> <code>"red velvet"^4</code>, <code>chocolate^2</code>
+									</div>
+									<div>
+										<b>Field grouping:</b> <code>tags:(+work -"fun-stuff")</code>
+									</div>
+									<div>
+										<b>Escaping:</b> Escape characters <code>+-&|!(){}[]^"~*?:\</code> with <code>\</code>, e.g. <code>\+</code>
+									</div>
+								</div>
+								<div class="col m6 s12">
+									<div>
+										<b>Range search:</b> <code>properties.timestamp:[1587729413488 TO *]</code> (inclusive),
+										<code>properties.title:{A TO Z}</code>(excluding A and Z)
+									</div>
+									<div>
+										<b>Combinations:</b> <code>chocolate AND vanilla</code>, <code>chocolate OR vanilla</code>,
+										<code>(chocolate OR vanilla) NOT "vanilla pudding"</code>
+									</div>
+									<div>
+										<b>Field search:</b> <code>properties.title:"The Title" AND text</code>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="main-container">
+
+
+	
+		<!--サイドバー-->
+		<div class="side-menu parent scroll01">
+	    	<div class="child child-l side-menu-inner">
+				<ul>
+					<div class="largeText">
+						カテゴリ
+					</div>
+					<div class="mediumText man bk">
+						<li><a href="$questionslink/category/$!cat.getKey()?returnto=$!returnto" title="$!{categoryName}" class="$!{categorySelectedClass}">カテゴリ1</a></li>
+					</div>
+   				</ul>
+   		 	</div>
+			<div class="child child-r vertical-rl">	
+				<p>Category</p>
+			</div>
+		</div>
+	
+	
+	<div class="row wid105">
+		<div name="main" class="main-content col wid60 push20 push-l2 s12">
+			<ul class="TabMenu mediumText">
+				<a href="${request.contextPath}/$!{filter}" class="TabMenu-Item $new">
+				<li>
+					新着順
+				</li>
+				</a>
+				<a href="${request.contextPath}$!{filter}?sortby=answers" class="TabMenu-Item $answers">
+				<li>
+					回答数が多い順
+				</li>
+				</a>
+				<a href="${request.contextPath}$!{filter}?sortby=unanswered" class="TabMenu-Item $unanswered">
+				<li>
+					未回答の質問
+				</li>
+				</a>
+			</ul>
+			<div class="page-content pam">
+				<div class="row mbn pam questionbox hover1">
+					<div class="col l2">
+						<div class="hide-on-med-and-down">
+							<div class="row mbn userbox">
+								<div class="col s4 m5 l12 pad0">
+									<img src="images/avatar.svg" width="65" height="65" class="profile-pic responsive-img">
+								</div>
+								<div class="col pad0 s8 m7 l12">
+									<div class="userbox-body pts">
+										<a class="mediumText">テストユーザ1</a>
+										<br>
+										<div class="lightborder mediumText box-m phs clear-n tooltipped orange lighten-5">
+										2回答	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col l10">
+						<div class="row mbn">
+							<div class="col l12">
+								<a class="" href="question.html">
+									<div class="largetext base_box overflow-ellipsis">
+										格安ランチの店を教えて下さい
+									</div>								
+									<div class="mbs text-ellipsis">
+										<div>
+											600円以下のランチがあれば知りたいです。 ・天狗酒場 ・山小屋 ・だんだん ・池袋大酒場 は知ってます。
+										</div>
+									</div>
+								</a>
+							</div>							
+						</div>
+						<div class="row mbn">
+							<div class="col l12">
+								<div class="flex flex-row">
+									<i class="fa fa-folder grey-text"></i>
+									&nbsp;
+									<a class="mrs">
+										ライフハック
+									</a>
+									<a class="chip mrs">
+										<i class="fa fa-tag grey-text"></i>ランチ
+									</a>
+									<a class="item-right">
+										<i class="fa fa-clock-o"></i>
+										<span title="7 months 前">
+											2020/08/19, 11:06
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="row mbn pam questionbox hover1">
+					<div class="col l2">
+						<div class="hide-on-med-and-down">
+							<div class="row mbn userbox">
+								<div class="col s4 m5 l12 pad0">
+									<img src="images/avatar.svg" width="65" height="65" class="profile-pic responsive-img">
+								</div>
+								<div class="col pad0 s8 m7 l12">
+									<div class="userbox-body pts">
+										<a class="mediumText">テストユーザ2</a>
+										<br>
+										<div class="lightborder mediumText box-m phs clear-n tooltipped orange lighten-5">
+										1回答	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col l10">
+						<div class="row mbn">
+							<div class="col l12">
+								<a class="">
+									<div class="largetext base_box overflow-ellipsis">
+										【PowerPoint】2画面印刷のサイズ拡大
+									</div>								
+									<div class="mbs text-ellipsis">
+										<div>
+											PowerPointをA4用紙1枚につき、2画面印刷する場合、余白の割合が大きく感じます。 画面の割合を大きくする方法、割合を調整する方法があれば教えて下さい。
+										</div>
+									</div>
+								</a>
+							</div>							
+						</div>
+						<div class="row mbn">
+							<div class="col l12">
+								<div class="flex flex-row">
+									<i class="fa fa-folder grey-text"></i>
+									&nbsp;
+									<a class="mrs">
+										Office系知識
+									</a>
+									<a class="chip mrs">
+										<i class="fa fa-tag grey-text"></i>PowerPoint
+									</a>
+									<a class="item-right">
+										<i class="fa fa-clock-o"></i>
+										<span title="7 months 前">
+											2020/08/19, 11:06
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="row mbn pam questionbox hover1">
+					<div class="col l2">
+						<div class="hide-on-med-and-down">
+							<div class="row mbn userbox">
+								<div class="col s4 m5 l12 pad0">
+									<img src="images/avatar.svg" width="65" height="65" class="profile-pic responsive-img">
+								</div>
+								<div class="col pad0 s8 m7 l12">
+									<div class="userbox-body pts">
+										<a class="mediumText">テストユーザ1</a>
+										<br>
+										<div class="lightborder mediumText box-m phs clear-n tooltipped orange lighten-5">
+										2回答	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col l10">
+						<div class="row mbn">
+							<div class="col l12">
+								<a class="">
+									<div class="largetext base_box overflow-ellipsis">
+										【有給】付与タイミング・消滅期限
+									</div>								
+									<div class="mbs text-ellipsis">
+										<div>
+											以下の内容分かる人教えて下さい(^^)　・有給が付与されるタイミング　・有給が消滅するタイミング　・消滅する場合、厚遇措置は有るのか
+										</div>
+									</div>
+								</a>
+							</div>							
+						</div>
+						<div class="row mbn">
+							<div class="col l12">
+								<div class="flex flex-row">
+									<i class="fa fa-folder grey-text"></i>
+									&nbsp;
+									<a class="mrs">
+										社内システム・ルール
+									</a>
+									<a class="chip mrs">
+										<i class="fa fa-tag grey-text"></i>社内ルール
+									</a>
+									<a class="item-right">
+										<i class="fa fa-clock-o"></i>
+										<span title="7 months 前">
+											2020/08/19, 11:06
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="row mbn pam questionbox hover1">
+					<div class="col l2">
+						<div class="hide-on-med-and-down">
+							<div class="row mbn userbox">
+								<div class="col s4 m5 l12 pad0">
+									<img src="images/avatar.svg" width="65" height="65" class="profile-pic responsive-img">
+								</div>
+								<div class="col pad0 s8 m7 l12">
+									<div class="userbox-body pts">
+										<a class="mediumText">テストユーザ1</a>
+										<br>
+										<div class="lightborder mediumText box-m phs clear-n tooltipped orange lighten-5">
+										2回答	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col l10">
+						<div class="row mbn">
+							<div class="col l12">
+								<a class="">
+									<div class="largetext base_box overflow-ellipsis">
+										【商談】商品ファミリと価格表の使い分け
+									</div>								
+									<div class="mbs text-ellipsis">
+										<div>
+											新しく導入された社内システムですが、何をどう使い分けするのか分かりません。
+										</div>
+									</div>
+								</a>
+							</div>							
+						</div>
+						<div class="row mbn">
+							<div class="col l12">
+								<div class="flex flex-row">
+									<i class="fa fa-folder grey-text"></i>
+									&nbsp;
+									<a class="mrs">
+										社内システム・ルール
+									</a>
+									<a class="chip mrs">
+										<i class="fa fa-tag grey-text"></i>社内システム
+									</a>
+									<a class="chip mrs">
+										<i class="fa fa-tag grey-text"></i>SF-使い方
+									</a>
+
+									<a class="item-right">
+										<i class="fa fa-clock-o"></i>
+										<span title="7 months 前">
+											2020/08/19, 11:06
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="row mbn pam questionbox hover1">
+					<div class="col l2">
+						<div class="hide-on-med-and-down">
+							<div class="row mbn userbox">
+								<div class="col s4 m5 l12 pad0">
+									<img src="images/avatar.svg" width="65" height="65" class="profile-pic responsive-img">
+								</div>
+								<div class="col pad0 s8 m7 l12">
+									<div class="userbox-body pts">
+										<a class="mediumText">テストユーザ1</a>
+										<br>
+										<div class="lightborder mediumText box-m phs clear-n tooltipped orange lighten-5">
+										2回答	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col l10">
+						<div class="row mbn">
+							<div class="col l12">
+								<a class="">
+									<div class="largetext base_box overflow-ellipsis">
+										【Zoom】マイクの購入について
+									</div>								
+									<div class="mbs text-ellipsis">
+										<div>
+											イヤホンでのZoom会議を基本としていますが、マイクの音質に違いが出ます。　マイク選びのコツや、良し悪しの基準があれば教えて下さい。
+										</div>
+									</div>
+								</a>
+							</div>							
+						</div>
+						<div class="row mbn">
+							<div class="col l12">
+								<div class="flex flex-row">
+									<i class="fa fa-folder grey-text"></i>
+									&nbsp;
+									<a class="mrs">
+										一般的な質問
+									</a>
+									<a class="chip mrs">
+										<i class="fa fa-tag grey-text"></i>Zoom
+									</a>
+									<a class="item-right">
+										<i class="fa fa-clock-o"></i>
+										<span title="7 months 前">
+											2020/08/19, 11:06
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div name="sub" class="col wid20 push20 push-l2 s12">
+			<ol class="rank pan ptm">
+				<div class="largeText">
+					ランキング
+				</div>
+				<li class=n1>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+				<li class=n2>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+				<li class=n3>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+				<li class=n4>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+				<li class=n5>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+				<li class=n6>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+				<li class=n7>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+				<li class=n8>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+				<li class=n9>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+				<li class=n10>
+					<div class="base_box overflow-ellipsis">
+						<a href="question.html" title="$!question.name" class="mrs" style="font-weight:bold;">
+							title1
+						</a>
+					</div>
+					<div class="smallText flex">
+						<div class="prs" id="fl1">
+							<i class="fa fa-folder grey-text"></i>&nbsp;カテゴリ1
+							<a href="$questionslink/category/$!utils.urlEncode($question.categoryId)" title="Posts categorized $scooldUtils.getCategoryName($question.categoryId)" class="mrs">
+								
+							</a>
+						</div>
+						<div class="prs">
+							<i class="fa fa-thumbs-up"></i>&nbsp;1
+							<i class="fa fa-comment"></i>&nbsp;2
+							<i class="fa fa-eye"></i>&nbsp;3
+						</div>
+					</div>
+				</li>
+			</ol>
+			
+
+		</div>
+		<div name="sub" class="col wid20 pull80 pull-l10 s12">
+
+		</div>
+	</div>
+	
+</main>
+
+			
+
+<script nonce="$cspNonce" src="scripts/jquery.min.js"></script>
+<script nonce="$cspNonce" src="scripts/diff_match_patch.js"></script>
+<script nonce="$cspNonce" src="scripts/materialize.min.js"></script>
+<script nonce="$cspNonce" src="scripts/easymde.min.js"></script>
+<script src="scripts/scoold.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</body>

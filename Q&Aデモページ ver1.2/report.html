@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--                       __    __
+    ______________  ____  / /___/ /
+   / ___/ ___/ __ \/ __ \/ / __  /
+  (__  ) /__/ /_/ / /_/ / / /_/ /
+ /____/\___/\____/\____/_/\__,_/
+
+ https://scoold.com
+-->
+<html lang="ja" dir="LTR">
+	<head>
+		<title>Scoold | レポート</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="generator" content="Scoold">
+		<meta property="fb:app_id" content="">
+		<meta property="og:title" content="Scoold | レポート">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="http://10.10.50.18:8000/reports">
+		<meta property="og:image" content="/images/logowhite.png">
+		<meta property="og:description" content="">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@getscoold">
+		<meta name="twitter:title" content="Scoold | レポート">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:image" content="/images/logowhite.png">
+		<link href="opensearch.xml" title="Scoold" type="application/opensearchdescription+xml" rel="search">
+		<link href="feed.xml" rel="alternate" type="application/atom+xml" title="New questions feed">
+		<link href="images/logowhite.png" rel="image_src">
+		<link href="images/logowhite.png" rel="apple-touch-icon">
+		<link href="images/favicon.ico" rel="shortcut icon">
+		<link href="style/materialize.min.css" rel="stylesheet">
+		<link href="style/font-awesome.min.css" rel="stylesheet">
+		<link href="style/easymde.min.css" rel="stylesheet">
+		<link href="style/highlighting.css" rel="stylesheet">
+		<link href="style/style.css" rel="stylesheet" media="screen">
+		<script nonce="t4yGRQH3BEZuEqy43J5jNg==" src="scripts/globals.js"></script>
+		<script nonce="t4yGRQH3BEZuEqy43J5jNg==">CONFIRM_MSG = "本当に実行しますか?";</script>
+	</head>
+	<body>
+		<div class="scoold-wrapper">
+			<header>
+                    <div class="none">
+                        <nav class="navbar-color">
+                            <div class="nav-wrapper container wid90">
+                                <a href="#" data-target="mobile-drawer" class="sidenav-trigger"><i class="fa fa-bars fa-2x" style="color:#e0e0e0"></i></a>
+                                
+                                    <ul id="user-dropdown" class="dropdown-content">
+                                        <li><a href="profile" title="Name">プロフィール</a></li>
+                                        <li><a href="settings" title="Settings">設定</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="signout" title="Sign out" class="mtm signout">ログアウト</a></li>
+                                    </ul>
+    
+                                <div class="brand-logo">
+                                    <a href="index.html">
+                                        <img src="images/image1.png" class="scoold-logo" width="200" alt="scoold logo">
+                                        <span style="color:black; font-size:small;">テストページ</span>
+                                    </a>
+                                </div>
+    
+                                <ul class="right hide-on-med-and-down">
+                                    <!--　↓NEW検索スペース↓　-->
+                                    <li>
+                                        <label for="kensaku">
+                                            <a class="dropdown-trigger">
+                                                <i class="fa fa-search fa"></i>
+                                            </a>
+                                        </label>
+                                        <input type="checkbox" id="kensaku" >
+                                        <div class="dropdown-content-kensaku">
+                                            <i class="fa fa-search fa-2x"></i>
+                                            <input id="search-box" type="search" name="q" placeholder="検索" required=""style="padding-left:2600px">
+                                            <i class="fa fa-question-circle"></i>
+                                            <i class="fa fa-close"></i>
+                                        </div>
+                                    </li>
+                                <!--　↑NEW検索スペース↑　-->
+    
+                                <li><a href="index.html" title="Questions" class="">質問</a></li>
+                                <li><a href="user.html" title="Users" class="">ユーザー</a></li>
+                                <li><a href="tags.html" title="Tags" class="">タグ</a></li>
+                                <li><a href="ask.html" title="Ask Question" class="">質問する</a></li>
+                                
+                                
+                                <li><label for="menu">
+                                    <a class="dropdown-trigger">
+                                        カテゴリ
+                                        <i class="fa fa-caret-down right"></i>
+                                    </a></label>
+                                    <input type="checkbox" id="menu">								
+                                    <ul class="dropdown-content">
+                                        <li><span href="/questions/category/categoryId_5f3b95ea1114c1016fa404b2?returnto=/questions/ask" title="開発言語" class="">開発言語</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="/questions/category/categoryId_606aa0e6b27b3735c3af685f?returnto=/questions/ask" title="Salesforce" class="">Salesforce</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="/questions/category/categoryId_5f3b95dc1114c1016fa4049a?returnto=/questions/ask" title="研修生の投稿" class="">研修生の投稿</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="/questions/category/categoryId_5f3b95e41114c1016fa404a6?returnto=/questions/ask" title="Office系知識" class="">Office系知識</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="/questions/category/categoryId_5fbdc0a3738c196836234881?returnto=/questions/ask" title="GRANDITチーム" class="">GRANDITチーム</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="/questions/category/categoryId_5f3b95f11114c1016fa404be?returnto=/questions/ask" title="ライフハック" class="">ライフハック</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="/questions/category/categoryId_5f3b95f81114c1016fa404ca?returnto=/questions/ask" title="一般的な質問" class="">一般的な質問</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="/questions/category/categoryId_5f3b95d51114c1016fa4048e?returnto=/questions/ask" title="社内システム・ルール" class="">社内システム・ルール</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="/questions/category/categoryId_5f3b95cd1114c1016fa40482?returnto=/questions/ask" title="scooldの使い方・要望" class="">scooldの使い方・要望</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="/questions/category/categoryId_5fbdc0a2738c196836234875?returnto=/questions/ask" title="CBI" class="">CBI</span></li>
+                                        <li class="divider" tabindex="0"></li>
+                                    </ul>
+                                </li>
+    
+                                    <li>
+                                        <a href="report.html" title="Reports" class="">レポート
+                                        </a>
+                                    </li>
+    
+                                <li>
+                                    <label for="space">
+                                        <a class="">
+                                            <i class="fa fa-th-large"></i>
+                                            <i class="fa fa-caret-down right"></i>
+                                        </a>
+                                    </label>
+                                    <input type="checkbox" id="space">	
+                                    <ul class="dropdown-content-space">
+                                        <li><span href="#" class="">すべてのスペース</span></li>
+                                    </ul>
+                                </li>
+    
+                                <li>
+                                    <label for="my">
+                                        <a class="scoold-user-dropdown">
+                                            <img src="images/avatar.svg" width="50" class="profile-pic responsive-img" alt="Avatar">
+                                            <i class="fa fa-caret-down right"></i>
+                                        </a>
+                                    </label>
+                                    <input type="checkbox" id="my">	
+                                    <ul class="dropdown-content-my">
+                                        <li><a href="profile.html" class="">プロフィール</a></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><a href="settings.html" class="">設定</a></li>
+                                        <li class="divider" tabindex="0"></li>
+                                        <li><span href="#" class="">ログアウト</span></li>
+                                    </ul>
+                                </li>
+    
+    
+                            </ul>
+    
+                                <ul class="sidenav" id="mobile-drawer">
+                                    <li>
+                                        <nav class="light-blue z-depth-0">
+                                            <div class="nav-wrapper">
+                                                <form action="/search">
+                                                    <div class="input-field">
+                                                        <input type="search" name="q" placeholder="検索" required>
+                                                        <label class="label-icon" for="search"><i class="fa fa-search fa-2x"></i></label>
+                                                            <i class="material-icons fa fa-close"></i>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </nav>
+                                    </li>
+                                    <li>
+                                        <img src="/people/avatar?url=https%3A%2F%2Fwww.gravatar.com%2Favatar%2F13394735f9e57139eaae2cee4599b03c%3Fsize%3D400%26d%3Dmm%26r%3Dpg" width="50"  alt="Avatar" class="profile-pic responsive-img left mhl">
+                                        <a href="/profile" class="black-text mvl pll"Name</a>
+                                    </li>
+                                    <li><a href="/settings" title="Settings">設定</a></li>
+                                    <li><a href="/questions/ask" title="Ask Question" class="">質問する</a></li>
+                                    <li><a href="/questions" title="Questions" class="">質問</a></li>
+                                    <li><a href="/people" title="Users" class="">ユーザー</a></li>
+                                    <li><a href="/tags" title="Tags" class="">タグ</a></li>
+                                    <li><a href="/category" title="Category">カテゴリ</a></li>
+                                    <li><a href="/signout" title="Sign out" class="signout">ログアウト</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+    
+                        <nav id="search-drawer" class="white z-depth-1 hide hide-on-med-and-down">
+                            <div class="nav-wrapper container">
+                                <form id="search-drawer" class="hide-on-med-and-down" action="/search">
+                                    <div class="input-field">
+                                        <input id="search-box" type="search" name="q" placeholder="検索" required>
+                                        <label class="label-icon" for="search-box"><i class="fa fa-search fa-2x grey-text"></i></label>
+                                            <a href="#" id="search-info-right"><i class="fa fa-question-circle grey-text"></i></a>
+                                            <i class="material-icons fa fa-close grey-text toggle-drawer"></i>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                        <div id="search-info-drawer" class="z-depth-0 hide hide-on-med-and-down">
+                            <div class="pvl container">
+                                <div class="row">
+                                    <div class="col m6 s12">
+                                        <div>
+                                            <b>Examples:</b> <code>query</code>, <code>"exact match"</code>, <code>wildcard*</code>,
+                                            <code>wild?ard</code>, <code>wild*rd</code>
+                                        </div>
+                                        <div>
+                                            <b>Fuzzy search:</b> <code>cake~</code> (finds <code>cakes</code>, <code>bake</code>)
+                                        </div>
+                                        <div>
+                                            <b>Term boost:</b> <code>"red velvet"^4</code>, <code>chocolate^2</code>
+                                        </div>
+                                        <div>
+                                            <b>Field grouping:</b> <code>tags:(+work -"fun-stuff")</code>
+                                        </div>
+                                        <div>
+                                            <b>Escaping:</b> Escape characters <code>+-&|!(){}[]^"~*?:\</code> with <code>\</code>, e.g. <code>\+</code>
+                                        </div>
+                                    </div>
+                                    <div class="col m6 s12">
+                                        <div>
+                                            <b>Range search:</b> <code>properties.timestamp:[1587729413488 TO *]</code> (inclusive),
+                                            <code>properties.title:{A TO Z}</code>(excluding A and Z)
+                                        </div>
+                                        <div>
+                                            <b>Combinations:</b> <code>chocolate AND vanilla</code>, <code>chocolate OR vanilla</code>,
+                                            <code>(chocolate OR vanilla) NOT "vanilla pudding"</code>
+                                        </div>
+                                        <div>
+                                            <b>Field search:</b> <code>properties.title:"The Title" AND text</code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+    
+
+			<main class="main-container">
+
+
+
+	<noscript>
+		<div class="infostrip errorBox pvm center">
+			<i class="fa fa-warning"></i> JavaScriptが無効になっています。不具合が起きる可能性があります。
+		</div>
+	</noscript>
+	<div class="card-panel infostrip hide ">
+			<a href="#" class="right close-infostrip"><i class="fa fa-times"></i></a>
+		<div class="infostrip-content">
+			
+		</div>
+	</div>
+
+	<div class="page-wrapper">
+		<h2>レポート </h2>
+		<hr>
+		<div class="preview-dialog jqmWindow hide"> <div class="center">  <div class="progress ajaxwait "><div class="indeterminate"></div></div>
+</div></div>
+				<div class="page-content pam">	<div class="reportbox card-panel">
+		<div class="row">
+			<div class="col m7 largeText">
+				<div class="left mrl green-text report-closed-icon "><i class="fa fa-check"></i></div>
+				不要な投稿
+			</div>
+			<div class="col m5 r">
+				<a href="#" class="btn editlink green darken-1 report-close-btn hide" title="Close report">
+					<i class="fa fa-check"></i> 閉じる
+				</a>
+				<a href="/reports/5fb769b8c15d6f75f86e1876/delete" title="Delete" class="btn red white-text delete-report">
+					<i class="fa fa-times"></i> 削除
+				</a>
+			</div>
+		</div>
+
+		<div class="row viewbox">
+			<div class="col m10">
+				<div class="c">
+					<strong> <i class="fa fa-user-circle grey-text"></i>
+							<a href="/profile/5f3b98d41114c1016fa4050d:profile" title="Go to profile">テストユーザー2:</a>
+					</strong>
+					<span>テストです</span>
+				</div>
+					<i class="fa fa-external-link-square grey-text"></i> <a href="/profile/5f615b7d1114c1016fa4232b"> /profile/5f615b7d1114c1016fa4232b</a>
+				<div class="hide">
+					<i class="fa fa-info-circle grey-text" title="対応内容"></i>
+					<span class="report-solution-text"></span>
+				</div>
+						<div><tt><b>_ObjectId</b>: 5fb769b8c15d6f75f86e1883</tt></div>
+			</div>
+			<div class="col m2 r">
+				<span class="right"><i class="fa fa-clock-o"></i><span title="5 months 前">
+	2020/11/20, 16:01
+</span>
+</span>
+			</div>
+		</div>
+
+		<div class="hide editbox mtm">
+			<form method="post" action="/reports/5fb769b8c15d6f75f86e1876/close" class="close-report-form">
+				<div class="input-field">
+					<label>対応内容</label>
+					<textarea name="solution" class="materialize-textarea mbm"></textarea>
+				</div>
+				<button type="submit" class="btn waves-effect waves-light report-solution-btn">保存 &amp; 閉じる</button>
+			</form>
+		</div>
+	</div>
+</div>
+ 	</div>
+
+
+
+			</main>
+
+			
+
+		<script nonce="t4yGRQH3BEZuEqy43J5jNg==" src="scripts/jquery.min.js"></script>
+		<script nonce="t4yGRQH3BEZuEqy43J5jNg==" src="scripts/diff_match_patch.js"></script>
+		<script nonce="t4yGRQH3BEZuEqy43J5jNg==" src="scripts/materialize.min.js"></script>
+		<script nonce="t4yGRQH3BEZuEqy43J5jNg==" src="scripts/highlight.min.js"></script>
+		<script nonce="t4yGRQH3BEZuEqy43J5jNg==" src="scripts/easymde.min.js"></script>
+		<script nonce="t4yGRQH3BEZuEqy43J5jNg==" src="scripts/scoold.js"></script>
+
+
+	</body>
+</html>
